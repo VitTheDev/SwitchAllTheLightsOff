@@ -1,0 +1,54 @@
+.Board {
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+table tr:first-child td:first-child {
+  border-radius: 10px 0 0 0 !important;
+}
+table tr:first-child td:last-child {
+  border-radius: 0 10px 0 0 !important;
+}
+table tr:last-child td:first-child {
+  border-radius: 0 0 0 10px !important;
+}
+table tr:last-child td:last-child {
+  border-radius: 0 0 10px 0 !important;
+}
+
+.Board-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+}
+
+.container button {
+  border: none;
+  padding: 0.5rem 2rem;
+  width: 150px;
+  height: 50px;
+  outline: none;
+  background: #fff;
+  color: #000;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background: #333;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
